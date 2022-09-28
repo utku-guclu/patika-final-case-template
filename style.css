@@ -1,0 +1,101 @@
+:root {
+    --purple: #7D4AEA;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    margin: 1.5em 3.5em;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.purple-border {
+    background-color: var(--purple);
+    border-radius: 1em;
+}
+
+.purple-border span {
+    color: white;
+}
+
+/* Links inside the navbar */
+.navbar a,
+.modal-cards {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.modal-cards {
+    margin-right: 4em;
+    display: inherit;
+    align-items: center;
+}
+
+.icon,
+.signin {
+    margin-right: 1em;
+}
+
+.navbar a {
+    padding: 1em;
+    color: inherit;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    color: inherit
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
