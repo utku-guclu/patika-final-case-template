@@ -46,11 +46,34 @@
         </div>
         <div class="main">
             <h1 class=modal-header>Simple modal <br>card creator</h1>
-            <p>A utility-first CSS framework packed with classeslike flex, pt-4, text-center and
+            <p class="main-p">A utility-first CSS framework packed with classeslike flex, pt-4, text-center and
                 rotate-90 that can becomposed to build any design, directly in your markup.</p>
             <a class="purple-border" href=""><span>Try it out now</span></a>
+            <div class="modal" id="modal">
+                <div class="close-modal-btn-container">
+                    <button class="modal-close-btn" id="modal-close-btn">X</button>
+                </div>
+                <div class="modal-inner" id="modal-inner">
+                    <img src="./img/Vector.png" alt="camper">
+                    <h2>Join the club</h2>
+                    <p class="modal-text" id="modal-text">Subscribe and Get an Extra
+                        25% Off on your first purchase.</p>
+                    <form id="consent-form">
+                        <label for="email"></label>
+                        <input id="email" type="email" placeholder="Email address" required>
+                        <button class="modal-btn" type="submit">Subscribe</button>
+                        <div class="signup">
+                            <label for="modal-checkbox">By signing up, you agree to Privacy Policy
+                                and Terms of Use.
+                            </label>
+                            <input id="modal-checkbox" type="checkbox" unchecked>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
