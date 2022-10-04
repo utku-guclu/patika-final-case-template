@@ -42,10 +42,7 @@ setTimeout(function () {
 document.addEventListener(
   "click",
   (e) => {
-    if (
-      !e.target.closest("modal-close-btn") ||
-      e.target.matches("modal-close-btn")
-    ) {
+    if (!e.target.closest("#modal") || e.target.matches("#modal-close-btn")) {
       closeModal();
     }
   },
