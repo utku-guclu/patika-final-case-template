@@ -16,34 +16,60 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="header">
+            <div class="navbar">
 
-            <div class="right">
-                <div class="modal-cards">
-                    <img class="icon" src="./img/icon.png" alt="icon">
-                    <span><strong>modal.cards</strong></span>
-                </div>
-                <div class="middle">
-                    <div class="dropdown">
-                        <button class="dropbtn">Solutions
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
+                <div class="right">
+                    <div class="modal-cards">
+                        <img class="icon" src="./img/icon.png" alt="icon">
+                        <span class="modal-cards--text"><strong>modal.cards</strong></span>
                     </div>
-                    <a href="#">Product Tour</a>
-                    <a href="#">Showcase</a>
-                    <a href="#">Pricing</a>
+                    <div class="middle">
+                        <div class="dropdown">
+                            <button class="dropbtn">Solutions
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <a href="#">Product Tour</a>
+                        <a href="#">Showcase</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                </div>
+                <div class="left">
+                    <a class="signin" href="./index.html">Sign in</a>
+                    <a class="purple-border" id="try-for-free" href="./modals.html"><span>Try for free</span></a>
+                </div>
+                <div class="burger">
+                    <a class="icon-one" href="#drawer">
+                        <div class="hamburger hamburger-one"></div>
+                    </a>
                 </div>
             </div>
-            <div class="left">
-                <a class="signin" href="/">Sign in</a>
-                <!-- <a class="purple-border" id="try-for-free" href="./modals.html"><span>Try for free</span></a> -->
+            <div class="burger">
+                <a class="icon-one" href="#drawer">
+                    <div class="hamburger hamburger-one"></div>
+                </a>
             </div>
+
         </div>
+        <aside id="drawer">
+            <header>
+                <a id="icon-one" class="icon-one" href="#">
+                    <div class="hamburger hamburger-one"></div>
+                </a>
+            </header>
+            <nav>
+                <h1><a href="#">Solutions</a></h1>
+                <h1><a href="#">Product Tour</a></h1>
+                <h1><a href="#">Showcase</a></h1>
+                <h1><a href="#">Pricing</a></h1>
+            </nav>
+        </aside>
         <div class="main">
             <div class="modal" id="modal"></div>
             <div class="modals">

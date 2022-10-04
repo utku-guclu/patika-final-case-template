@@ -1,5 +1,10 @@
+const iconOne = document.getElementById("icon-one");
 const modal = document.getElementById("modal");
-const modals = document.getElementById("modals-container");
+window.onload = function () {
+  iconOne.addEventListener("click", () => {
+    iconOne.classList.toggle("active-one");
+  });
+};
 
 const modalHTML = `
 <div class="close-modal-btn-container">
@@ -27,23 +32,36 @@ const modalHTML = `
 
 modal.innerHTML = modalHTML;
 
+const modals = document.getElementById("modals-container");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consent-form");
 setTimeout(function () {
   modal.style.display = "inline";
 }, 1500);
 
-modalCloseBtn.addEventListener("click", () => {
+document.addEventListener(
+  "click",
+  (e) => {
+    if (
+      !e.target.closest("modal-close-btn") ||
+      e.target.matches("modal-close-btn")
+    ) {
+      closeModal();
+    }
+  },
+  true
+);
+
+function closeModal() {
   modal.style.display = "none";
-});
+}
 
 consentForm.addEventListener("submit", (e) => {
   // e.preventDefault();
   console.log("form submitted!");
 });
 
-console.log(modals.children);
-
-Array.from(modals.children).map((modal) => {
-  modal.innerHTML = modalHTML;
-});
+modals &&
+  Array.from(modals.children).map((modal) => {
+    modal.innerHTML = modalHTML;
+  });
