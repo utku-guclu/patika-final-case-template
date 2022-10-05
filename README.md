@@ -2,5 +2,5 @@
 ## simple-modal-card-creator
 ### Template file in the folder.
 
-Simple Project with React.js used functional components mostly.
+<p>Simple Project with React.js used functional components mostly.</p>
 https://patika-final-case.vercel.app/
