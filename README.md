@@ -4,3 +4,6 @@
 
 <p>Simple Project with React.js used functional components mostly.</p>
 https://patika-final-case.vercel.app/
+
+
+## npm start to run
